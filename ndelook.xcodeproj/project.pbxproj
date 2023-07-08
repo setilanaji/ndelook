@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AC0D21E39C7027F4ECECF883 /* Pods_ndelook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93740D76E3B363BD0BB61C3A /* Pods_ndelook.framework */; };
 		D03FF2372A5856F200F27A39 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03FF2362A5856F200F27A39 /* AppDelegate.swift */; };
 		D03FF2392A5856F200F27A39 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03FF2382A5856F200F27A39 /* SceneDelegate.swift */; };
 		D03FF2402A5856F300F27A39 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D03FF23F2A5856F300F27A39 /* Assets.xcassets */; };
@@ -51,9 +52,18 @@
 		D048E3832A594C6800308D47 /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D048E3822A594C6800308D47 /* HomeRouter.swift */; };
 		D048E3852A594C7E00308D47 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D048E3842A594C7E00308D47 /* HomePresenter.swift */; };
 		D048E3872A594D1100308D47 /* HomeViewController+Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = D048E3862A594D1100308D47 /* HomeViewController+Layout.swift */; };
+		D048E3892A59564F00308D47 /* AppLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D048E3882A59564F00308D47 /* AppLabel.swift */; };
+		D048E38B2A59566100308D47 /* AppTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = D048E38A2A59566100308D47 /* AppTheme.swift */; };
+		D048E38D2A59576400308D47 /* AppButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D048E38C2A59576400308D47 /* AppButton.swift */; };
+		D048E38F2A59578E00308D47 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D048E38E2A59578E00308D47 /* UIColor+Extension.swift */; };
+		D048E3912A5957EC00308D47 /* AppImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D048E3902A5957EC00308D47 /* AppImageView.swift */; };
+		D048E3952A5958A600308D47 /* AppCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D048E3942A5958A600308D47 /* AppCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		167F3A51727AE602129DF068 /* Pods-ndelook.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ndelook.release.xcconfig"; path = "Target Support Files/Pods-ndelook/Pods-ndelook.release.xcconfig"; sourceTree = "<group>"; };
+		2C09C6262A14C8A02C24311E /* Pods-ndelook.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ndelook.debug.xcconfig"; path = "Target Support Files/Pods-ndelook/Pods-ndelook.debug.xcconfig"; sourceTree = "<group>"; };
+		93740D76E3B363BD0BB61C3A /* Pods_ndelook.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ndelook.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D03FF2332A5856F200F27A39 /* ndelook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ndelook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D03FF2362A5856F200F27A39 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D03FF2382A5856F200F27A39 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -100,6 +110,12 @@
 		D048E3822A594C6800308D47 /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
 		D048E3842A594C7E00308D47 /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
 		D048E3862A594D1100308D47 /* HomeViewController+Layout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeViewController+Layout.swift"; sourceTree = "<group>"; };
+		D048E3882A59564F00308D47 /* AppLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppLabel.swift; sourceTree = "<group>"; };
+		D048E38A2A59566100308D47 /* AppTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTheme.swift; sourceTree = "<group>"; };
+		D048E38C2A59576400308D47 /* AppButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppButton.swift; sourceTree = "<group>"; };
+		D048E38E2A59578E00308D47 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		D048E3902A5957EC00308D47 /* AppImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppImageView.swift; sourceTree = "<group>"; };
+		D048E3942A5958A600308D47 /* AppCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,17 +123,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC0D21E39C7027F4ECECF883 /* Pods_ndelook.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		35E5ABEBB387E33CF7122B74 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				93740D76E3B363BD0BB61C3A /* Pods_ndelook.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D03FF22A2A5856F200F27A39 = {
 			isa = PBXGroup;
 			children = (
 				D03FF2352A5856F200F27A39 /* ndelook */,
 				D03FF2342A5856F200F27A39 /* Products */,
+				E5519E83D2FF6B1B14953C9F /* Pods */,
+				35E5ABEBB387E33CF7122B74 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -229,6 +256,7 @@
 				D048E36C2A5946D600308D47 /* Publisher+Extension.swift */,
 				D048E36E2A5946F500308D47 /* UICollectionView+Extension.swift */,
 				D048E3702A59471A00308D47 /* UIImageView+Extension.swift */,
+				D048E38E2A59578E00308D47 /* UIColor+Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -237,6 +265,11 @@
 			isa = PBXGroup;
 			children = (
 				D048E3722A59489000308D47 /* AppColor.swift */,
+				D048E3882A59564F00308D47 /* AppLabel.swift */,
+				D048E38A2A59566100308D47 /* AppTheme.swift */,
+				D048E38C2A59576400308D47 /* AppButton.swift */,
+				D048E3902A5957EC00308D47 /* AppImageView.swift */,
+				D048E3942A5958A600308D47 /* AppCollectionViewCell.swift */,
 			);
 			path = Theme;
 			sourceTree = "<group>";
@@ -317,6 +350,15 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		E5519E83D2FF6B1B14953C9F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2C09C6262A14C8A02C24311E /* Pods-ndelook.debug.xcconfig */,
+				167F3A51727AE602129DF068 /* Pods-ndelook.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -324,9 +366,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D03FF25D2A5856F400F27A39 /* Build configuration list for PBXNativeTarget "ndelook" */;
 			buildPhases = (
+				D3AA65C1D5830501F5855946 /* [CP] Check Pods Manifest.lock */,
 				D03FF22F2A5856F200F27A39 /* Sources */,
 				D03FF2302A5856F200F27A39 /* Frameworks */,
 				D03FF2312A5856F200F27A39 /* Resources */,
+				7E8CD1A9EC1D48B515D48EEF /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -383,6 +427,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		7E8CD1A9EC1D48B515D48EEF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ndelook/Pods-ndelook-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ndelook/Pods-ndelook-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ndelook/Pods-ndelook-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D3AA65C1D5830501F5855946 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ndelook-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D03FF22F2A5856F200F27A39 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -398,6 +484,8 @@
 				D03FF2372A5856F200F27A39 /* AppDelegate.swift in Sources */,
 				D048E3522A59401800308D47 /* DiscoverMovieDomain.swift in Sources */,
 				D048E37E2A594BF200308D47 /* MovieDetailViewController+Layout.swift in Sources */,
+				D048E3892A59564F00308D47 /* AppLabel.swift in Sources */,
+				D048E38D2A59576400308D47 /* AppButton.swift in Sources */,
 				D048E3812A594C5700308D47 /* HomeViewController.swift in Sources */,
 				D048E37C2A594B8100308D47 /* MovieDetailPresenter.swift in Sources */,
 				D048E3472A5923E400308D47 /* PlistHelper.swift in Sources */,
@@ -416,7 +504,9 @@
 				D048E3732A59489000308D47 /* AppColor.swift in Sources */,
 				D048E3582A59414D00308D47 /* GenreDomain.swift in Sources */,
 				D048E3852A594C7E00308D47 /* HomePresenter.swift in Sources */,
+				D048E38B2A59566100308D47 /* AppTheme.swift in Sources */,
 				D048E3612A59462900308D47 /* NiblessView.swift in Sources */,
+				D048E3912A5957EC00308D47 /* AppImageView.swift in Sources */,
 				D048E3832A594C6800308D47 /* HomeRouter.swift in Sources */,
 				D048E3322A59111600308D47 /* APIServiceManager.swift in Sources */,
 				D048E35E2A5944B200308D47 /* DiscoverViewController.swift in Sources */,
@@ -424,8 +514,10 @@
 				D048E3562A59410F00308D47 /* BaseDomain.swift in Sources */,
 				D048E3712A59471A00308D47 /* UIImageView+Extension.swift in Sources */,
 				D048E34B2A593D0800308D47 /* GetGenresRequestModel.swift in Sources */,
+				D048E38F2A59578E00308D47 /* UIColor+Extension.swift in Sources */,
 				D048E3672A59467000308D47 /* Wireframe.swift in Sources */,
 				D048E35A2A59448700308D47 /* DiscoverRouter.swift in Sources */,
+				D048E3952A5958A600308D47 /* AppCollectionViewCell.swift in Sources */,
 				D048E33B2A5917B300308D47 /* Genre.swift in Sources */,
 				D048E3542A5940F200308D47 /* DomainModel.swift in Sources */,
 				D048E3872A594D1100308D47 /* HomeViewController+Layout.swift in Sources */,
@@ -562,6 +654,7 @@
 		};
 		D03FF25E2A5856F400F27A39 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2C09C6262A14C8A02C24311E /* Pods-ndelook.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -573,6 +666,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -588,6 +682,7 @@
 		};
 		D03FF25F2A5856F400F27A39 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 167F3A51727AE602129DF068 /* Pods-ndelook.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -599,6 +694,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
