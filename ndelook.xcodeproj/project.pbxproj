@@ -10,63 +10,22 @@
 		D03FF2372A5856F200F27A39 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03FF2362A5856F200F27A39 /* AppDelegate.swift */; };
 		D03FF2392A5856F200F27A39 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03FF2382A5856F200F27A39 /* SceneDelegate.swift */; };
 		D03FF23B2A5856F200F27A39 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03FF23A2A5856F200F27A39 /* ViewController.swift */; };
-		D03FF23E2A5856F200F27A39 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D03FF23C2A5856F200F27A39 /* Main.storyboard */; };
 		D03FF2402A5856F300F27A39 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D03FF23F2A5856F300F27A39 /* Assets.xcassets */; };
 		D03FF2432A5856F300F27A39 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D03FF2412A5856F300F27A39 /* LaunchScreen.storyboard */; };
-		D03FF24E2A5856F400F27A39 /* ndelookTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03FF24D2A5856F400F27A39 /* ndelookTests.swift */; };
-		D03FF2582A5856F400F27A39 /* ndelookUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03FF2572A5856F400F27A39 /* ndelookUITests.swift */; };
-		D03FF25A2A5856F400F27A39 /* ndelookUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03FF2592A5856F400F27A39 /* ndelookUITestsLaunchTests.swift */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		D03FF24A2A5856F400F27A39 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D03FF22B2A5856F200F27A39 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = D03FF2322A5856F200F27A39;
-			remoteInfo = ndelook;
-		};
-		D03FF2542A5856F400F27A39 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D03FF22B2A5856F200F27A39 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = D03FF2322A5856F200F27A39;
-			remoteInfo = ndelook;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		D03FF2332A5856F200F27A39 /* ndelook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ndelook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D03FF2362A5856F200F27A39 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D03FF2382A5856F200F27A39 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		D03FF23A2A5856F200F27A39 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		D03FF23D2A5856F200F27A39 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D03FF23F2A5856F300F27A39 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D03FF2422A5856F300F27A39 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D03FF2442A5856F300F27A39 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D03FF2492A5856F400F27A39 /* ndelookTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ndelookTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		D03FF24D2A5856F400F27A39 /* ndelookTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ndelookTests.swift; sourceTree = "<group>"; };
-		D03FF2532A5856F400F27A39 /* ndelookUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ndelookUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		D03FF2572A5856F400F27A39 /* ndelookUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ndelookUITests.swift; sourceTree = "<group>"; };
-		D03FF2592A5856F400F27A39 /* ndelookUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ndelookUITestsLaunchTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		D03FF2302A5856F200F27A39 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D03FF2462A5856F400F27A39 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D03FF2502A5856F400F27A39 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -80,8 +39,6 @@
 			isa = PBXGroup;
 			children = (
 				D03FF2352A5856F200F27A39 /* ndelook */,
-				D03FF24C2A5856F400F27A39 /* ndelookTests */,
-				D03FF2562A5856F400F27A39 /* ndelookUITests */,
 				D03FF2342A5856F200F27A39 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -90,8 +47,6 @@
 			isa = PBXGroup;
 			children = (
 				D03FF2332A5856F200F27A39 /* ndelook.app */,
-				D03FF2492A5856F400F27A39 /* ndelookTests.xctest */,
-				D03FF2532A5856F400F27A39 /* ndelookUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -102,29 +57,11 @@
 				D03FF2362A5856F200F27A39 /* AppDelegate.swift */,
 				D03FF2382A5856F200F27A39 /* SceneDelegate.swift */,
 				D03FF23A2A5856F200F27A39 /* ViewController.swift */,
-				D03FF23C2A5856F200F27A39 /* Main.storyboard */,
 				D03FF23F2A5856F300F27A39 /* Assets.xcassets */,
 				D03FF2412A5856F300F27A39 /* LaunchScreen.storyboard */,
 				D03FF2442A5856F300F27A39 /* Info.plist */,
 			);
 			path = ndelook;
-			sourceTree = "<group>";
-		};
-		D03FF24C2A5856F400F27A39 /* ndelookTests */ = {
-			isa = PBXGroup;
-			children = (
-				D03FF24D2A5856F400F27A39 /* ndelookTests.swift */,
-			);
-			path = ndelookTests;
-			sourceTree = "<group>";
-		};
-		D03FF2562A5856F400F27A39 /* ndelookUITests */ = {
-			isa = PBXGroup;
-			children = (
-				D03FF2572A5856F400F27A39 /* ndelookUITests.swift */,
-				D03FF2592A5856F400F27A39 /* ndelookUITestsLaunchTests.swift */,
-			);
-			path = ndelookUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -147,42 +84,6 @@
 			productReference = D03FF2332A5856F200F27A39 /* ndelook.app */;
 			productType = "com.apple.product-type.application";
 		};
-		D03FF2482A5856F400F27A39 /* ndelookTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = D03FF2602A5856F400F27A39 /* Build configuration list for PBXNativeTarget "ndelookTests" */;
-			buildPhases = (
-				D03FF2452A5856F400F27A39 /* Sources */,
-				D03FF2462A5856F400F27A39 /* Frameworks */,
-				D03FF2472A5856F400F27A39 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				D03FF24B2A5856F400F27A39 /* PBXTargetDependency */,
-			);
-			name = ndelookTests;
-			productName = ndelookTests;
-			productReference = D03FF2492A5856F400F27A39 /* ndelookTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		D03FF2522A5856F400F27A39 /* ndelookUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = D03FF2632A5856F400F27A39 /* Build configuration list for PBXNativeTarget "ndelookUITests" */;
-			buildPhases = (
-				D03FF24F2A5856F400F27A39 /* Sources */,
-				D03FF2502A5856F400F27A39 /* Frameworks */,
-				D03FF2512A5856F400F27A39 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				D03FF2552A5856F400F27A39 /* PBXTargetDependency */,
-			);
-			name = ndelookUITests;
-			productName = ndelookUITests;
-			productReference = D03FF2532A5856F400F27A39 /* ndelookUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -195,14 +96,6 @@
 				TargetAttributes = {
 					D03FF2322A5856F200F27A39 = {
 						CreatedOnToolsVersion = 14.3.1;
-					};
-					D03FF2482A5856F400F27A39 = {
-						CreatedOnToolsVersion = 14.3.1;
-						TestTargetID = D03FF2322A5856F200F27A39;
-					};
-					D03FF2522A5856F400F27A39 = {
-						CreatedOnToolsVersion = 14.3.1;
-						TestTargetID = D03FF2322A5856F200F27A39;
 					};
 				};
 			};
@@ -220,8 +113,6 @@
 			projectRoot = "";
 			targets = (
 				D03FF2322A5856F200F27A39 /* ndelook */,
-				D03FF2482A5856F400F27A39 /* ndelookTests */,
-				D03FF2522A5856F400F27A39 /* ndelookUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -233,21 +124,6 @@
 			files = (
 				D03FF2432A5856F300F27A39 /* LaunchScreen.storyboard in Resources */,
 				D03FF2402A5856F300F27A39 /* Assets.xcassets in Resources */,
-				D03FF23E2A5856F200F27A39 /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D03FF2472A5856F400F27A39 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D03FF2512A5856F400F27A39 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,47 +140,9 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D03FF2452A5856F400F27A39 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D03FF24E2A5856F400F27A39 /* ndelookTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D03FF24F2A5856F400F27A39 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D03FF2582A5856F400F27A39 /* ndelookUITests.swift in Sources */,
-				D03FF25A2A5856F400F27A39 /* ndelookUITestsLaunchTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXTargetDependency section */
-		D03FF24B2A5856F400F27A39 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = D03FF2322A5856F200F27A39 /* ndelook */;
-			targetProxy = D03FF24A2A5856F400F27A39 /* PBXContainerItemProxy */;
-		};
-		D03FF2552A5856F400F27A39 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = D03FF2322A5856F200F27A39 /* ndelook */;
-			targetProxy = D03FF2542A5856F400F27A39 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
 /* Begin PBXVariantGroup section */
-		D03FF23C2A5856F200F27A39 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D03FF23D2A5856F200F27A39 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		D03FF2412A5856F300F27A39 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -440,8 +278,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ndelook/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -467,8 +304,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ndelook/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -481,78 +317,6 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		D03FF2612A5856F400F27A39 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = id.ydhstj.ndelookTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ndelook.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ndelook";
-			};
-			name = Debug;
-		};
-		D03FF2622A5856F400F27A39 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = id.ydhstj.ndelookTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ndelook.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ndelook";
-			};
-			name = Release;
-		};
-		D03FF2642A5856F400F27A39 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = id.ydhstj.ndelookUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = ndelook;
-			};
-			name = Debug;
-		};
-		D03FF2652A5856F400F27A39 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = id.ydhstj.ndelookUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = ndelook;
 			};
 			name = Release;
 		};
@@ -573,24 +337,6 @@
 			buildConfigurations = (
 				D03FF25E2A5856F400F27A39 /* Debug */,
 				D03FF25F2A5856F400F27A39 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		D03FF2602A5856F400F27A39 /* Build configuration list for PBXNativeTarget "ndelookTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				D03FF2612A5856F400F27A39 /* Debug */,
-				D03FF2622A5856F400F27A39 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		D03FF2632A5856F400F27A39 /* Build configuration list for PBXNativeTarget "ndelookUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				D03FF2642A5856F400F27A39 /* Debug */,
-				D03FF2652A5856F400F27A39 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
