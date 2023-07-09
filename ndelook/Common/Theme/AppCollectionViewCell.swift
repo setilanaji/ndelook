@@ -7,7 +7,7 @@
 
 import UIKit
 
-class AppCollectionViewCell: UICollectionViewCell, UIGestureRecognizerDelegate {
+class AppCollectionViewCell: NiblessCollectionViewCell, UIGestureRecognizerDelegate {
     private var pressedDownTransform =  CGAffineTransform.identity.scaledBy(x: 0.95, y: 0.95)
     
     func addLongPressAnimation(scaledBy: Double = 0.96) {

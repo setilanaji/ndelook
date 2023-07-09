@@ -1,5 +1,5 @@
 //
-//  GetGenresRequestModel.swift
+//  GetMoviesTopRatedRequestModel.swift
 //  ndelook
 //
 //  Created by Yudha S on 08/07/23.
@@ -7,11 +7,9 @@
 
 import Foundation
 
-
-class GetGenresRequestModel: RequestModel {
-    
+class GetMoviesTopRatedRequestModel: RequestModel {
     override var path: String {
-        return NetworkConstant.shared.getValue(forKey: .pathGenresMovie)
+        NetworkConstant.shared.getValue(forKey: .pathMovieTopRated)
     }
     
     override var method: HTTPRequestMethod {

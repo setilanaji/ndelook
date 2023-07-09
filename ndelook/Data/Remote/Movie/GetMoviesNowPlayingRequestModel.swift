@@ -1,5 +1,5 @@
 //
-//  GetDiscoverMoviesRequestModel.swift
+//  GetMoviesNowPlayingRequestModel.swift
 //  ndelook
 //
 //  Created by Yudha S on 08/07/23.
@@ -7,10 +7,9 @@
 
 import Foundation
 
-class GetDiscoverMoviesRequestModel: RequestModel {
-    
+class GetMoviesNowPlayingRequestModel: RequestModel {
     override var path: String {
-        return NetworkConstant.shared.getValue(forKey: .pathDiscoverMovie)
+        NetworkConstant.shared.getValue(forKey: .pathMovieNowPlaying)
     }
     
     override var method: HTTPRequestMethod {

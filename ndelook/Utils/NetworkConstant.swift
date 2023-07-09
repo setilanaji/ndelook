@@ -14,6 +14,12 @@ class NetworkConstant {
         case base = "Base"
         case pathDiscoverMovie = "PathDiscoverMovie"
         case pathGenresMovie = "PathGenresMovie"
+        case pathMovie = "PathMovie"
+        case baseImage = "BaseImage"
+        case pathMovieNowPlaying = "PathMovieNowPlaying"
+        case pathMovieUpcoming = "PathMovieUpcoming"
+        case pathMovieTopRated = "PathMovieTopRated"
+        case pathMoviePopular = "PathMoviePopular"
     }
     
     private var configuration: [String: Any]?

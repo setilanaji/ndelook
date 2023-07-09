@@ -17,3 +17,9 @@ extension UIViewController {
     func constructHierarchy() {}
     func activateConstraints() {}
 }
+
+extension UIViewController {
+    var screenWidth: CGFloat {
+        self.view.window?.screen.screenWidth ?? 0
+    }
+}

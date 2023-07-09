@@ -6,49 +6,16 @@
 //
 
 import UIKit
+import SDWebImage
 
 extension UIImageView {
-    private static let imageCache = NSCache<NSString, UIImage>()
-    
-    public func loadImage(from urlString: String, placeholder: UIImage? = nil, completion: (() -> Void)? = nil) {
-        self.image = placeholder
-        
-        guard let url = URL(string: urlString) else {
-            completion?()
-            return
+    func loadImage(with image: String, placeholderImage: UIImage? = UIImage(named: "imgNoImage"), showLoadingIndicator: Bool = true) {
+        let urlString = NetworkConstant.shared.getValue(forKey: .baseImage) + ImageResourceHelper.getRemoteImagePathFor(image: image)
+
+        if showLoadingIndicator {
+            sd_imageIndicator = SDWebImageActivityIndicator.gray
         }
-        
-        if let cachedImage = UIImageView.imageCache.object(forKey: url.absoluteString as NSString) {
-            self.image = cachedImage
-            completion?()
-            return
-        }
-        
-        loadImage(from: url, completion: completion)
-    }
-    
-    private func loadImage(from url: URL, completion: (() -> Void)?) {
-        guard UIApplication.shared.canOpenURL(url) else {
-            completion?()
-            return
-        }
-        
-        URLSession.shared.dataTask(with: url) { [weak self] data, _, error in
-            guard let data = data, error == nil else {
-                completion?()
-                return
-            }
-            
-            if let image = UIImage(data: data) {
-                UIImageView.imageCache.setObject(image, forKey: url.absoluteString as NSString)
-                DispatchQueue.main.async {
-                    self?.image = image
-                    completion?()
-                }
-            } else {
-                completion?()
-            }
-        }.resume()
+        sd_setImage(with: URL(string: urlString), placeholderImage: placeholderImage, options: [])
     }
 }
 

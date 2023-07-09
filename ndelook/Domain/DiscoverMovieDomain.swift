@@ -12,7 +12,6 @@ struct MovieDiscoverDomain {
     let backdropPath: String
     let genreIDS: [Int]
     let id: Int
-    let originalLanguage: OriginalLanguageDomain
     let originalTitle, overview: String
     let popularity: Double
     let posterPath, releaseDate, title: String
@@ -26,7 +25,6 @@ struct MovieDiscoverDomain {
             backdropPath: "",
             genreIDS: [],
             id: 0,
-            originalLanguage: .en,
             originalTitle: "",
             overview: "",
             popularity: 0,
@@ -37,10 +35,4 @@ struct MovieDiscoverDomain {
             voteAverage: 0,
             voteCount: 0
         )
-}
-
-enum OriginalLanguageDomain: String {
-    case en = "en"
-    case es = "es"
-    case ja = "ja"
 }

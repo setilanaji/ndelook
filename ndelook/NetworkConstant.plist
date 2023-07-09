@@ -2,6 +2,18 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>PathMoviePopular</key>
+	<string>/movie/popular</string>
+	<key>PathMovieTopRated</key>
+	<string>/movie/top_rated</string>
+	<key>PathMovieUpcoming</key>
+	<string>/movie/upcoming</string>
+	<key>PathMovieNowPlaying</key>
+	<string>/movie/now_playing</string>
+	<key>BaseImage</key>
+	<string>https://image.tmdb.org</string>
+	<key>PathMovie</key>
+	<string>/movie</string>
 	<key>PathGenresMovie</key>
 	<string>/genre/movie/list</string>
 	<key>PathDiscoverMovie</key>

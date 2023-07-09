@@ -15,4 +15,12 @@ extension UICollectionView {
         
         return cell
     }
+    
+    func dequeueReusableView<T: UICollectionReusableView>(indexPath: IndexPath, kind: String) -> T {
+        guard let cell = dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: T.identity, for: indexPath) as? T else {
+            fatalError("reusable view with \"\(T.identity)\" identifier is not registered!")
+        }
+        
+        return cell
+    }
 }

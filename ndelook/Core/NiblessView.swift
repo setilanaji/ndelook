@@ -11,6 +11,7 @@ open class NiblessView: UIView {
     public override init(frame: CGRect) {
         super.init(frame: frame)
         backgroundColor = .backgroundColor
+        setupSubviews()
     }
     
     @available(*, unavailable, message: "Unsupported")

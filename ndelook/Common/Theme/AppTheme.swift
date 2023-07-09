@@ -23,7 +23,7 @@ class AppTheme {
     static func textStyle(forType type: AppTextStyle, attributes: AppTextAttributes) -> [NSAttributedString.Key: Any] {
         
         var textAttributes: [NSAttributedString.Key: Any] = [
-            .foregroundColor: attributes.textColor ?? .primaryColor
+            .foregroundColor: attributes.textColor ?? .label
         ]
         
         switch type {
