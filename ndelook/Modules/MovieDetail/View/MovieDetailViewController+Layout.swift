@@ -21,7 +21,7 @@ extension MovieDetailViewController {
         
         containerView.addSubview(contentContainer)
         contentContainer.addSubview(contentStack)
-        contentStack.addArrangedSubview(videoPlayerViw)
+        contentStack.addArrangedSubview(videoPlayerView)
         contentStack.addArrangedSubview(checkButton)
         contentStack.addArrangedSubview(informationSectionView)
         contentStack.addArrangedSubview(buttonSectionView)
@@ -77,9 +77,9 @@ extension MovieDetailViewController {
             $0.edges.equalToSuperview()
         }
         
-        videoPlayerViw.snp.remakeConstraints {
+        videoPlayerView.snp.remakeConstraints {
             $0.width.equalToSuperview()
-            $0.height.equalTo(videoPlayerViw.snp.width).multipliedBy(9.0/16.0)
+            $0.height.equalTo(videoPlayerView.snp.width).multipliedBy(9.0/16.0)
         }
         
         checkButton.snp.makeConstraints {

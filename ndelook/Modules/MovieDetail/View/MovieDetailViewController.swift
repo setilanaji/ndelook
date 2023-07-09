@@ -78,7 +78,7 @@ class MovieDetailViewController: NiblessViewController {
         return view
     }()
     
-    private(set) lazy var videoPlayerViw: YTPlayerView = {
+    private(set) lazy var videoPlayerView: YTPlayerView = {
         let view = YTPlayerView()
         return view
     }()
@@ -99,8 +99,9 @@ class MovieDetailViewController: NiblessViewController {
             attr.textColor = .white
             return attr
         }
-        button.setTitle("Where to Watch", for: .normal)
+        button.setTitle("Check Now", for: .normal)
         button.cornerRadius = 10
+        button.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(self.onTapCheck(_:))))
         return button
     }()
     
@@ -120,7 +121,7 @@ class MovieDetailViewController: NiblessViewController {
         self.presenter = presenter
         super.init()
     }
-    
+        
     override func viewDidLoad() {
         super.viewDidLoad()
         setupSubviews()
@@ -152,8 +153,8 @@ extension MovieDetailViewController {
                     "controls": 0,
                     "loop": 1
                 ]
-                self?.videoPlayerViw.load(withVideoId: key, playerVars: playerVars)
-                self?.videoPlayerViw.playVideo()
+                self?.videoPlayerView.load(withVideoId: key, playerVars: playerVars)
+                self?.videoPlayerView.playVideo()
             }.store(in: &cancellables)
     }
     
@@ -161,6 +162,11 @@ extension MovieDetailViewController {
         nameLabel.text = movie.title
         infosLabel.text = movie.infos
         informationSectionView.setup(genres: movie.genresString, description: movie.overview)
+    }
+    
+    @objc
+    private func onTapCheck(_ sender: AppButton) {
+        presenter.viewEventSubject.send(.onTapCheck)
     }
 }
 

@@ -20,6 +20,7 @@ class NetworkConstant {
         case pathMovieUpcoming = "PathMovieUpcoming"
         case pathMovieTopRated = "PathMovieTopRated"
         case pathMoviePopular = "PathMoviePopular"
+        case shareMovie = "ShareMovie"
     }
     
     private var configuration: [String: Any]?
@@ -37,5 +38,9 @@ class NetworkConstant {
             fatalError("Value not found for key: \(key)")
         }
         return value
+    }
+    
+    func buildShareLink(movieId: Int) -> URL? {
+        return URL(string: self.getValue(forKey: .shareMovie) + movieId.toString())
     }
 }
