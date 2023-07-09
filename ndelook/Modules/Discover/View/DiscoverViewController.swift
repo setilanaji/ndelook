@@ -13,6 +13,8 @@ class DiscoverViewController: NiblessViewController {
     private var cancellables = Set<AnyCancellable>()
     internal var movies = [MovieDiscoverDomain]()
     
+    internal let loadingIndicator = UIActivityIndicatorView(style: UIActivityIndicatorView.Style.large)
+    
     internal lazy var sectionViews: UICollectionView = {
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .vertical
@@ -23,24 +25,6 @@ class DiscoverViewController: NiblessViewController {
         view.contentInsetAdjustmentBehavior = .never
         view.showsVerticalScrollIndicator = false
         view.register(MovieViewCell.self, forCellWithReuseIdentifier: MovieViewCell.identity)
-        return view
-    }()
-    
-    private(set) lazy var backdropContainer: UIView = {
-        let view = UIView()
-        return view
-    }()
-    
-    internal lazy var backdropImage: AppImageView = {
-        let view = AppImageView()
-        view.contentMode = .scaleAspectFill
-        return view
-    }()
-    
-    private(set) lazy var backdropView: UIVisualEffectView = {
-        let blurEffect = UIBlurEffect(style: .regular)
-        let view = UIVisualEffectView(effect: blurEffect)
-        view.alpha = 1
         return view
     }()
     
@@ -68,7 +52,6 @@ extension DiscoverViewController {
             .sink { [weak self] value in
                 self?.movies = value
                 self?.sectionViews.reloadData()
-                self?.setBackdrop(self?.movies.first)
             }
             .store(in: &cancellables)
         
@@ -78,12 +61,26 @@ extension DiscoverViewController {
                 self?.title = value
             }
             .store(in: &cancellables)
+        
+        presenter
+            .$isLoading
+            .sink { [weak self] value in
+                if value && (self?.movies.isEmpty ?? false) {
+                    self?.showLoadingIndicator()
+                } else {
+                    self?.hideLoadingIndicator()
+                }
+            }
+            .store(in: &cancellables)
     }
     
-    private func setBackdrop(_ movie: MovieDiscoverDomain?) {
-        guard let backdrop = movie?.backdropPath else {
-            return
-        }
-        backdropImage.loadImage(with: backdrop)
+    private func showLoadingIndicator() {
+        loadingIndicator.startAnimating()
+        loadingIndicator.isHidden = false
+    }
+    
+    private func hideLoadingIndicator() {
+        loadingIndicator.stopAnimating()
+        loadingIndicator.isHidden = true
     }
 }

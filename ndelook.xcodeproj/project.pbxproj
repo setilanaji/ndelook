@@ -109,6 +109,7 @@
 		D048E4022A5A88F100308D47 /* IconButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D048E4012A5A88F100308D47 /* IconButton.swift */; };
 		D048E4042A5A9E5500308D47 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D048E4032A5A9E5500308D47 /* UIView+Extension.swift */; };
 		D048E4062A5AA2D800308D47 /* MovieInformationSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D048E4052A5AA2D800308D47 /* MovieInformationSectionView.swift */; };
+		D0550CCD2A5ABFD200CD8DBD /* PaginationRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0550CCC2A5ABFD200CD8DBD /* PaginationRequest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -218,6 +219,7 @@
 		D048E4012A5A88F100308D47 /* IconButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconButton.swift; sourceTree = "<group>"; };
 		D048E4032A5A9E5500308D47 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		D048E4052A5AA2D800308D47 /* MovieInformationSectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieInformationSectionView.swift; sourceTree = "<group>"; };
+		D0550CCC2A5ABFD200CD8DBD /* PaginationRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaginationRequest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -293,10 +295,10 @@
 		D048E3282A590FDD00308D47 /* Discover */ = {
 			isa = PBXGroup;
 			children = (
+				D0550CCF2A5AC7B400CD8DBD /* Interactor */,
 				D048E35F2A5945FA00308D47 /* View */,
 				D048E3592A59448700308D47 /* DiscoverRouter.swift */,
 				D048E35B2A59449100308D47 /* DiscoverPresenter.swift */,
-				D048E3E82A5A597E00308D47 /* GetMoviesInteractor.swift */,
 			);
 			path = Discover;
 			sourceTree = "<group>";
@@ -548,7 +550,6 @@
 			children = (
 				D048E3A12A59858D00308D47 /* GetMovieDetailInteractor.swift */,
 				D048E3AE2A598FCC00308D47 /* GetMovieVideosInteractor.swift */,
-				D048E3ED2A5A762200308D47 /* GetMovieReviewsInteractor.swift */,
 			);
 			path = Interactor;
 			sourceTree = "<group>";
@@ -556,9 +557,11 @@
 		D048E3F12A5A7F0100308D47 /* Review */ = {
 			isa = PBXGroup;
 			children = (
+				D0550CCE2A5AC7A700CD8DBD /* Interactor */,
 				D048E3F22A5A7F3000308D47 /* View */,
 				D048E3F52A5A7F5800308D47 /* ReviewsRouter.swift */,
 				D048E3F72A5A7F6300308D47 /* ReviewsPresenter.swift */,
+				D0550CCC2A5ABFD200CD8DBD /* PaginationRequest.swift */,
 			);
 			path = Review;
 			sourceTree = "<group>";
@@ -573,6 +576,22 @@
 				D048E3FF2A5A85DD00308D47 /* ReviewsViewController+CollectionDataSource.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		D0550CCE2A5AC7A700CD8DBD /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				D048E3ED2A5A762200308D47 /* GetMovieReviewsInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		D0550CCF2A5AC7B400CD8DBD /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				D048E3E82A5A597E00308D47 /* GetMoviesInteractor.swift */,
+			);
+			path = Interactor;
 			sourceTree = "<group>";
 		};
 		E5519E83D2FF6B1B14953C9F /* Pods */ = {
@@ -767,6 +786,7 @@
 				D048E3D62A59CA6B00308D47 /* GetMoviesUpcomingRequestModel.swift in Sources */,
 				D048E3F42A5A7F4C00308D47 /* ReviewsViewController.swift in Sources */,
 				D048E3852A594C7E00308D47 /* HomePresenter.swift in Sources */,
+				D0550CCD2A5ABFD200CD8DBD /* PaginationRequest.swift in Sources */,
 				D048E38B2A59566100308D47 /* AppTheme.swift in Sources */,
 				D048E3612A59462900308D47 /* NiblessView.swift in Sources */,
 				D048E3912A5957EC00308D47 /* AppImageView.swift in Sources */,
@@ -938,10 +958,10 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ndelook/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ndelook;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -966,10 +986,10 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ndelook/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ndelook;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

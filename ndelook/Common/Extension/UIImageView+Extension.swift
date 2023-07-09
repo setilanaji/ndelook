@@ -13,7 +13,7 @@ extension UIImageView {
         let urlString = NetworkConstant.shared.getValue(forKey: .baseImage) + ImageResourceHelper.getRemoteImagePathFor(image: image)
 
         if showLoadingIndicator {
-            sd_imageIndicator = SDWebImageActivityIndicator.gray
+            sd_imageIndicator = SDWebImageActivityIndicator.medium
         }
         sd_setImage(with: URL(string: urlString), placeholderImage: placeholderImage, options: [])
     }

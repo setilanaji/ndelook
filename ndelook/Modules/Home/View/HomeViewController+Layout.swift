@@ -11,7 +11,6 @@ import SnapKit
 extension HomeViewController {
     override func constructHierarchy() {
         view.addSubview(sectionViews)
-        
         sectionViews.collectionViewLayout = createLayout()
     }
     

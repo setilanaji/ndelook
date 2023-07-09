@@ -33,4 +33,10 @@ extension ReviewsViewController: UICollectionViewDelegateFlowLayout {
         section.contentInsets = NSDirectionalEdgeInsets(top: 8, leading: 16, bottom: 8, trailing: 16)
         return section
     }
+    
+    func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
+            if indexPath.row == reviews.count - 2, !self.presenter.isLoading {
+                self.presenter.viewEventSubject.send(.loadMore)
+            }
+    }
 }

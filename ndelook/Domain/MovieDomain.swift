@@ -7,7 +7,6 @@
 
 import Foundation
 
-// MARK: - Welcome
 struct MovieVideosDomain {
     let id: Int
     let results: [MovieVideoDomain]
@@ -20,7 +19,6 @@ struct MovieVideosDomain {
     }
 }
 
-// MARK: - Result
 struct MovieVideoDomain {
     let iso639_1, iso3166_1, name, key: String
     let site: String

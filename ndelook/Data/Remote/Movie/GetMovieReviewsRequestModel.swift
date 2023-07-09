@@ -9,9 +9,14 @@ import Foundation
 
 class GetMovieReviewsRequestModel: RequestModel {
     private let movieId: Int
+    private let page: Int
     
-    init(movieId: Int) {
+    init(
+        movieId: Int,
+        page: Int
+    ) {
         self.movieId = movieId
+        self.page = page
     }
     
     override var path: String {
@@ -20,5 +25,11 @@ class GetMovieReviewsRequestModel: RequestModel {
     
     override var method: HTTPRequestMethod {
         return .get
+    }
+    
+    override var parameters: [String : Any?] {
+        return [
+            "page": page
+        ]
     }
 }

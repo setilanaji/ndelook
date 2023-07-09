@@ -9,7 +9,7 @@ import Foundation
 import Combine
 
 protocol GetMoviesUsecase: Usecase
-where Input == GenreDomain,
+where Input == PaginationRequestProtocol,
       Output == BaseDomain<[MovieDiscoverDomain]>,
       Failure == ErrorModel {}
 
@@ -23,7 +23,10 @@ final class GetMoviesInteractor {
 }
 
 extension GetMoviesInteractor: GetMoviesUsecase {
-    func execute(_ input: GenreDomain) -> AnyPublisher<BaseDomain<[MovieDiscoverDomain]>, ErrorModel> {
-        return discoverRepository.getMovies(request: GetDiscoverMoviesRequestModel(genre: input.id))
+    func execute(_ input: PaginationRequestProtocol) -> AnyPublisher<BaseDomain<[MovieDiscoverDomain]>, ErrorModel> {
+        guard let request = input as? PaginationRequest else {
+            return Fail(error: ErrorModel(message: "Wrong request")).eraseToAnyPublisher()
+        }
+        return discoverRepository.getMovies(request: GetDiscoverMoviesRequestModel(params: request.params, page: request.page))
     }
 }

@@ -22,7 +22,7 @@ class GenreViewCell: AppCollectionViewCell {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        contentView.backgroundColor = .tertiarySystemGroupedBackground
+        contentView.backgroundColor = .secondarySystemFill
         contentView.layer.cornerRadius = 10
         contentView.clipsToBounds = true
         addLongPressAnimation()

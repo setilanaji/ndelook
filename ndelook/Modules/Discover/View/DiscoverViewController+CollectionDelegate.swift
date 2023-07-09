@@ -40,4 +40,10 @@ extension DiscoverViewController: UICollectionViewDelegateFlowLayout {
         section.contentInsets = NSDirectionalEdgeInsets(top: 8, leading: 8, bottom: 8, trailing: 8)
         return section
     }
+    
+    func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
+            if indexPath.row == movies.count - 2, !self.presenter.isLoading {
+                self.presenter.viewEventSubject.send(.loadMore)
+            }
+    }
 }

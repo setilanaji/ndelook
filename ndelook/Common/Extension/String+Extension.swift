@@ -35,9 +35,8 @@ extension String {
                 return dateFormatter.string(from: date)
             } else {
                 dateFormatter.dateFormat = "HH:mm"
-                let formattedDate = dateFormatter.string(from: date)
                 let timeSince = "\(components.hour ?? 0)h \(components.minute ?? 0)m ago"
-                return "\(formattedDate) (\(timeSince))"
+                return "\(timeSince)"
             }
         } else {
             return "Invalid date format"

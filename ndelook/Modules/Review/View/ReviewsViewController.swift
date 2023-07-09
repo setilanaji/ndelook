@@ -9,7 +9,7 @@ import UIKit
 import Combine
 
 class ReviewsViewController: NiblessViewController {
-    private let presenter: ReviewsPresenter
+    internal let presenter: ReviewsPresenter
     private var cancellables = Set<AnyCancellable>()
     internal var reviews = [ReviewDomain]()
     

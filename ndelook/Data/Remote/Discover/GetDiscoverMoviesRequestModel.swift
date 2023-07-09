@@ -8,10 +8,15 @@
 import Foundation
 
 class GetDiscoverMoviesRequestModel: RequestModel {
-    private let genre: Int
+    private let page: Int
+    private let params: [String: Any]
     
-    init(genre: Int) {
-        self.genre = genre
+    init(
+        params: [String: Any],
+        page: Int
+    ) {
+        self.params = params
+        self.page = page
     }
     
     override var path: String {
@@ -23,6 +28,10 @@ class GetDiscoverMoviesRequestModel: RequestModel {
     }
     
     override var parameters: [String : Any?] {
-        return ["with_genres": genre]
+        var params: [String: Any] = [
+            "page": page
+        ]
+        params.merge(self.params, uniquingKeysWith: { (_, new) in new })
+        return params
     }
 }
