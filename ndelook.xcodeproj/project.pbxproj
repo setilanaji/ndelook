@@ -397,6 +397,7 @@
 			isa = PBXGroup;
 			children = (
 				D048E3512A59401800308D47 /* DiscoverMovieDomain.swift */,
+				D0550CCC2A5ABFD200CD8DBD /* PaginationRequest.swift */,
 				D048E3552A59410F00308D47 /* BaseDomain.swift */,
 				D048E3572A59414D00308D47 /* GenreDomain.swift */,
 				D048E39A2A59766700308D47 /* MovieDetailDomain.swift */,
@@ -561,7 +562,6 @@
 				D048E3F22A5A7F3000308D47 /* View */,
 				D048E3F52A5A7F5800308D47 /* ReviewsRouter.swift */,
 				D048E3F72A5A7F6300308D47 /* ReviewsPresenter.swift */,
-				D0550CCC2A5ABFD200CD8DBD /* PaginationRequest.swift */,
 			);
 			path = Review;
 			sourceTree = "<group>";

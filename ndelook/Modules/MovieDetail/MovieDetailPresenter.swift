@@ -11,6 +11,7 @@ import Combine
 enum MovieDetailViewEvent {
     case viewDidLoad
     case onTapReviews
+    case onTapShare
 }
 
 final class MovieDetailPresenter: Presentation {
@@ -45,6 +46,8 @@ final class MovieDetailPresenter: Presentation {
                     }
                 case .onTapReviews:
                     router.navigationSubject.send(.toReviews(movieId))
+                case .onTapShare:
+                    router.navigationSubject.send(.toShare(movieId))
                 }
             }.store(in: &cancelables)
         

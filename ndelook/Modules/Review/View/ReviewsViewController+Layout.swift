@@ -11,6 +11,7 @@ import SnapKit
 extension ReviewsViewController {
     override func constructHierarchy() {
         view.addSubview(sectionViews)
+        view.addSubview(loadingIndicator)
         sectionViews.collectionViewLayout = createLayout()
     }
     

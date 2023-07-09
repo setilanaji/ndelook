@@ -169,8 +169,8 @@ extension MovieDetailViewController: IconButtonDelegate {
         switch type {
         case .review:
             presenter.viewEventSubject.send(.onTapReviews)
-        default:
-            break
+        case .share:
+            presenter.viewEventSubject.send(.onTapShare)
         }
     }
 }

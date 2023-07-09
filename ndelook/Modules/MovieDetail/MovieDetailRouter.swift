@@ -10,6 +10,7 @@ import Combine
 
 enum MovieDetailDestination {
     case toReviews(Int)
+    case toShare(Int)
 }
 
 protocol MovieDetailWireframe: Wireframe where Destination == MovieDetailDestination {}
@@ -26,9 +27,20 @@ class MovieDetailRouter: MovieDetailWireframe {
                 case .toReviews(let movieId):
                     let view = UINavigationController(rootViewController: ReviewsRouter.createModule(movieId: movieId))
                     self.viewController?.present(view, animated: true)
+                case .toShare(let movieId):
+                    self.shareLink(withId: movieId)
                 }
             }
             .store(in: &cancellables)
+    }
+    
+    private func shareLink(withId movieId: Int) {
+        guard let url = URL(string: "https://www.themoviedb.org/movie/\(movieId)") else {
+            return
+        }
+        let activityViewController = UIActivityViewController(activityItems: [url], applicationActivities: nil)
+        
+        viewController?.present(activityViewController, animated: true, completion: nil)
     }
     
     static func createModule(

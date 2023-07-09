@@ -13,6 +13,8 @@ class ReviewsViewController: NiblessViewController {
     private var cancellables = Set<AnyCancellable>()
     internal var reviews = [ReviewDomain]()
     
+    internal let loadingIndicator = UIActivityIndicatorView(style: UIActivityIndicatorView.Style.large)
+
     internal lazy var sectionViews: UICollectionView = {
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .vertical
@@ -53,5 +55,26 @@ extension ReviewsViewController {
                 self?.sectionViews.reloadData()
             }
             .store(in: &cancellables)
+        
+        presenter
+            .$isLoading
+            .sink { [weak self] value in
+                if value && (self?.reviews.isEmpty ?? false) {
+                    self?.showLoadingIndicator()
+                } else {
+                    self?.hideLoadingIndicator()
+                }
+            }
+            .store(in: &cancellables)
+    }
+    
+    private func showLoadingIndicator() {
+        loadingIndicator.startAnimating()
+        loadingIndicator.isHidden = false
+    }
+    
+    private func hideLoadingIndicator() {
+        loadingIndicator.stopAnimating()
+        loadingIndicator.isHidden = true
     }
 }
